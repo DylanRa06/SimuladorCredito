@@ -1,0 +1,7 @@
+Reglas de Validación para el Simulador de Crédito Darmon:
+1. Campos Obligatorios: Ningún campo de texto puede quedar vacío.
+2. Tipo de Datos: Ingresos, Egresos, Monto, Plazo y Tasa deben ser números positivos mayores a cero.
+3. Límites de Monto: El monto mínimo solicitado debe ser de USD 500 y el máximo de USD 50,000.
+4. Límites de Plazo: El plazo mínimo debe ser 1 año y el máximo 30 años.
+5. Límites de Tasa: La tasa de interés anual debe estar entre el 1% y el 35%.
+6. Mostrar Errores: Los mensajes deben aparecer en texto rojo justo debajo de cada input correspondiente.

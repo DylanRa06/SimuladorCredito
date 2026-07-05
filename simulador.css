@@ -141,3 +141,12 @@ button {
         border-radius: 12px;
     }
 }
+
+.error-msg {
+    color: #ef4444; /* Rojo brillante de alerta */
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-top: 4px;
+    min-height: 15px; /* Evita que el diseño salte bruscamente */
+}
