@@ -7,6 +7,8 @@ function calcular() {
     let egresos = parseFloat(componenteEgresos.value);
 
     let disponible = calcularDisponible(ingresos, egresos);
+    let capacidadPago = calcularCapacidadPago(disponible);
 
     document.getElementById("spnDisponible").innerText = "USD " + disponible.toFixed(2);
+    document.getElementById("spnCapacidadPago").innerText = "USD " + capacidadPago.toFixed(2);
 }
