@@ -23,4 +23,16 @@ function calcular() {
     document.getElementById("spnInteresPagar").innerText = "USD " + interesGenedado.toFixed(2);
     document.getElementById("spnTotalPrestamo").innerText = "USD " + totalPagar.toFixed(2);
     document.getElementById("spnCuotaMensual").innerText = "USD " + cuotaMensual.toFixed(2);
+
+    // Análisis del crédito
+    let esAprobado = aprobarCredito(capacidadPago, cuotaMensual);
+    let componenteEstado = document.getElementById("spnEstadoCredito");
+
+    if (esAprobado) {
+        componenteEstado.innerText = "CREDITO APROBADO";
+        componenteEstado.style.color = "green";
+    } else {
+        componenteEstado.innerText = "CREDITO RECHAZADO";
+        componenteEstado.style.color = "red";
+    }
 }
