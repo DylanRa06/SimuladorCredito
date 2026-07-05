@@ -15,8 +15,10 @@ function calcular() {
     let disponible = calcularDisponible(ingresos, egresos);
     let capacidadPago = calcularCapacidadPago(disponible);
     let interesGenedado = calcularInteresSimple(monto, tasa, plazo);
+    let totalPagar = calcularTotalPagar(monto, interesGenedado);
 
     document.getElementById("spnDisponible").innerText = "USD " + disponible.toFixed(2);
     document.getElementById("spnCapacidadPago").innerText = "USD " + capacidadPago.toFixed(2);
     document.getElementById("spnInteresPagar").innerText = "USD " + interesGenedado.toFixed(2);
+    document.getElementById("spnTotalPrestamo").innerText = "USD " + totalPagar.toFixed(2);
 }
