@@ -1,0 +1,2 @@
+Mejorar la interfaz visual del simulador de crédito para darle un aspecto empresarial y responsive, 
+utilizando una paleta de colores azul corporativo y verde financiero

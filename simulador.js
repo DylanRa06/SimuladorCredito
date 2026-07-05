@@ -36,3 +36,25 @@ function calcular() {
         componenteEstado.style.color = "red";
     }
 }
+
+document.getElementById("btnReiniciar").addEventListener("click", function() {
+    // Vaciar inputs
+    document.getElementById("txtIngresos").value = "";
+    document.getElementById("txtEgresos").value = "";
+    document.getElementById("txtMonto").value = "";
+    document.getElementById("txtPlazo").value = "";
+    document.getElementById("txtTasaInteres").value = "";
+
+    // Limpiar textos de resultados
+    document.getElementById("spnDisponible").innerText = "";
+    document.getElementById("spnCapacidadPago").innerText = "";
+    document.getElementById("spnInteresPagar").innerText = "";
+    document.getElementById("spnTotalPrestamo").innerText = "";
+    document.getElementById("spnCuotaMensual").innerText = "";
+    
+    // Restaurar estado de crédito
+    let componenteEstado = document.getElementById("spnEstadoCredito");
+    componenteEstado.innerText = "ANALIZANDO...";
+    componenteEstado.style.color = "var(--text-muted)";
+    componenteEstado.style.backgroundColor = "var(--secondary-color)";
+});
